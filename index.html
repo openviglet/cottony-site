@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Cottony · A plush match-3 from Viglet Games</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Cottony is a match-3 made of felt and stuffing, where plush hearts, drops, stars and buttons squash when they land and puff when they pop. The first game from Viglet Games, in development for Steam.">
+<meta name="theme-color" content="#B9D7F5">
+<link rel="canonical" href="https://openviglet.github.io/cottony-site/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://openviglet.github.io/cottony-site/">
+<meta property="og:title" content="Cottony · A plush match-3 from Viglet Games">
+<meta property="og:description" content="Plush hearts, drops, stars and buttons that squash when they land and puff when they pop. In development for Steam.">
+<meta property="og:image" content="https://openviglet.github.io/cottony-site/assets/og.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="Viglet Games">
+      <img src="assets/badge.webp" alt="" width="44" height="44">
+      <span class="brand-word"><span>Viglet</span> <span class="brand-games">Games</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections" data-i18n-attr="aria-label:nav.label">
+      <a href="#game" data-i18n="nav.game">The game</a>
+      <a href="#cast" data-i18n="nav.cast">Pieces</a>
+      <a href="#try" data-i18n="nav.try">Try it</a>
+      <a href="#boosters" data-i18n="nav.boosters">Boosters</a>
+      <a href="#peek" data-i18n="nav.peek">Sneak peek</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================ hero -->
+<section class="hero" id="top">
+  <div class="sky-clouds" aria-hidden="true">
+    <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+  </div>
+  <svg class="deco deco-star s1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4L2.8 9.5l6.4-.8Z"/></svg>
+  <svg class="deco deco-star s2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4L2.8 9.5l6.4-.8Z"/></svg>
+  <svg class="deco deco-heart h1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.8 1.2 5.2 3 1.4-1.8 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21Z"/></svg>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="status-pill">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-i18n="hero.status">In development · Coming to Steam</span>
+      </p>
+      <p class="presents" data-i18n="hero.presents">Viglet Games presents</p>
+      <h1 data-i18n="hero.title">The <span class="nw">match-3</span> you’ll want to <em>squeeze</em>.</h1>
+      <p class="lead" data-i18n="hero.lead">Cottony is a match-3 made of felt and stuffing. Hearts, drops, stars and buttons squash when they land and puff into little clouds when they pop. It’s the first game from Viglet Games, and it’s being stitched together right now.</p>
+      <div class="cta-row">
+        <a class="btn" href="#try" data-i18n="hero.play">Play a sample board</a>
+        <a class="btn btn-soft" href="#game" data-i18n="hero.more">See what’s coming</a>
+      </div>
+      <ul class="facts">
+        <li data-i18n="hero.fact.board">8 × 8 board</li>
+        <li data-i18n="hero.fact.pieces">6 plush pieces</li>
+        <li data-i18n="hero.fact.specials">3 specials</li>
+        <li data-i18n="hero.fact.boosters">3 boosters</li>
+      </ul>
+    </div>
+    <figure class="hero-art">
+      <img src="assets/hero.webp" width="820" height="622" alt="Cottony’s fluffy cloud mascot hugging the Cottony heart logo, beside a phone showing the plush match-3 board" data-i18n-attr="alt:hero.alt">
+    </figure>
+  </div>
+
+  <svg class="hills" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 96C150 40 310 38 470 84s330 92 520 34 330-80 450-40v106H0Z" fill="#E6D3F5"/>
+    <path d="M0 130c190-46 370-40 560 2s360 58 560 14 250-40 320-30v64H0Z" fill="#F6CDE0"/>
+    <path d="M0 130c190-46 370-40 560 2s360 58 560 14 250-40 320-30" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="10 9" opacity=".75" vector-effect="non-scaling-stroke" transform="translate(0 16)"/>
+    <path d="M0 160c220-26 420-22 640 4s420 24 800-8v24H0Z" fill="#FBE8F0"/>
+  </svg>
+</section>
+
+<!-- ============================================================ the game -->
+<section class="section section-blush" id="game">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker" data-i18n="game.kicker">The game</p>
+      <h2 data-i18n="game.title">Swap two neighbours. Line up three. Watch it all fall.</h2>
+      <p data-i18n="game.intro">Each level asks for a score inside a budget of moves. Matches clear, the pieces above drop into the gap, and new ones tumble in from the top.</p>
+    </header>
+
+    <div class="pillars">
+      <article class="felt pillar">
+        <img src="assets/pieces/puff.webp" alt="" width="96" height="96">
+        <h3 data-i18n="game.soft.title">Nothing snaps</h3>
+        <p data-i18n="game.soft.text">Pieces squash when they land, bounce as they settle and leave a puff of cotton when they pop.</p>
+      </article>
+      <article class="felt pillar">
+        <img src="assets/pieces/drop.webp" alt="" width="96" height="96">
+        <h3 data-i18n="game.legible.title">Readable at a glance</h3>
+        <p data-i18n="game.legible.text">Each piece has its own colour and its own shape, so the board still reads if you can’t tell the colours apart.</p>
+      </article>
+      <article class="felt pillar">
+        <img src="assets/pieces/heart.webp" alt="" width="96" height="96">
+        <h3 data-i18n="game.generous.title">Never stuck</h3>
+        <p data-i18n="game.generous.text">When no move is left, the board reshuffles itself and you keep playing. Sit still for five seconds and a hint lights up.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ the cast -->
+<section class="section section-cream" id="cast">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker" data-i18n="cast.kicker">The cast</p>
+      <h2 data-i18n="cast.title">Six plush pieces to match</h2>
+      <p data-i18n="cast.intro">Hearts, drops and candies have faces. Stars, buttons and puffs keep quiet.</p>
+    </header>
+
+    <ul class="cast">
+      <li><span class="tile"><img src="assets/pieces/heart.webp" alt="" width="120" height="120"></span><span data-i18n="piece.heart">Heart</span></li>
+      <li><span class="tile"><img src="assets/pieces/drop.webp" alt="" width="120" height="120"></span><span data-i18n="piece.drop">Drop</span></li>
+      <li><span class="tile"><img src="assets/pieces/star.webp" alt="" width="120" height="120"></span><span data-i18n="piece.star">Star</span></li>
+      <li><span class="tile"><img src="assets/pieces/button.webp" alt="" width="120" height="120"></span><span data-i18n="piece.button">Button</span></li>
+      <li><span class="tile"><img src="assets/pieces/puff.webp" alt="" width="120" height="120"></span><span data-i18n="piece.puff">Puff</span></li>
+      <li><span class="tile"><img src="assets/pieces/candy.webp" alt="" width="120" height="120"></span><span data-i18n="piece.candy">Candy</span></li>
+    </ul>
+
+    <div class="subhead">
+      <h3 data-i18n="specials.title">…and three you have to earn</h3>
+      <p data-i18n="specials.intro">Match more than three and the board hands you something back. Tap a card to see what.</p>
+    </div>
+
+    <div class="specials">
+      <button type="button" class="special" aria-pressed="false">
+        <span class="special-inner">
+          <span class="face front felt">
+            <span class="mystery"><img src="assets/pieces/line_h.webp" alt="" width="120" height="120"><b aria-hidden="true">?</b></span>
+            <span class="earn" data-i18n="specials.line.earn">Match 4 in a line</span>
+            <span class="tap" data-i18n="specials.tap">Tap to reveal</span>
+          </span>
+          <span class="face back felt">
+            <img src="assets/pieces/line_h.webp" alt="" width="96" height="96">
+            <span class="special-name" data-i18n="specials.line.name">Line blast</span>
+            <span class="mini" data-pattern="row" aria-hidden="true"></span>
+            <span class="special-text" data-i18n="specials.line.text">Clears its whole row or column, depending on which way the four lined up.</span>
+          </span>
+        </span>
+      </button>
+      <button type="button" class="special" aria-pressed="false">
+        <span class="special-inner">
+          <span class="face front felt">
+            <span class="mystery"><img src="assets/pieces/bomb.webp" alt="" width="120" height="120"><b aria-hidden="true">?</b></span>
+            <span class="earn" data-i18n="specials.bomb.earn">Match in an L or a T</span>
+            <span class="tap" data-i18n="specials.tap">Tap to reveal</span>
+          </span>
+          <span class="face back felt">
+            <img src="assets/pieces/bomb.webp" alt="" width="96" height="96">
+            <span class="special-name" data-i18n="specials.bomb.name">Bomb</span>
+            <span class="mini" data-pattern="bomb" aria-hidden="true"></span>
+            <span class="special-text" data-i18n="specials.bomb.text">Clears every piece in the 3 × 3 around it.</span>
+          </span>
+        </span>
+      </button>
+      <button type="button" class="special" aria-pressed="false">
+        <span class="special-inner">
+          <span class="face front felt">
+            <span class="mystery"><img src="assets/pieces/rainbow.webp" alt="" width="120" height="120"><b aria-hidden="true">?</b></span>
+            <span class="earn" data-i18n="specials.rainbow.earn">Match 5 in a line</span>
+            <span class="tap" data-i18n="specials.tap">Tap to reveal</span>
+          </span>
+          <span class="face back felt">
+            <img src="assets/pieces/rainbow.webp" alt="" width="96" height="96">
+            <span class="special-name" data-i18n="specials.rainbow.name">Rainbow</span>
+            <span class="mini" data-pattern="kind" aria-hidden="true"></span>
+            <span class="special-text" data-i18n="specials.rainbow.text">Swap it with any piece and every piece of that kind leaves the board.</span>
+          </span>
+        </span>
+      </button>
+    </div>
+    <p class="note-center" data-i18n="specials.chain">A special caught in a blast goes off too, so one can set off the next.</p>
+
+    <div class="subhead">
+      <h3 data-i18n="combos.title">Put two specials side by side</h3>
+      <p data-i18n="combos.intro">Swap one special into another and they fire together, bigger.</p>
+    </div>
+
+    <ul class="combos">
+      <li class="felt combo">
+        <span class="pair"><img src="assets/pieces/line_h.webp" alt="" width="56" height="56"><i>+</i><img src="assets/pieces/line_v.webp" alt="" width="56" height="56"></span>
+        <span class="mini" data-pattern="cross" aria-hidden="true"></span>
+        <strong data-i18n="combos.ll.name">Line + line</strong>
+        <span data-i18n="combos.ll.text">Clears the row and the column.</span>
+      </li>
+      <li class="felt combo">
+        <span class="pair"><img src="assets/pieces/line_h.webp" alt="" width="56" height="56"><i>+</i><img src="assets/pieces/bomb.webp" alt="" width="56" height="56"></span>
+        <span class="mini" data-pattern="wide" aria-hidden="true"></span>
+        <strong data-i18n="combos.lb.name">Line + bomb</strong>
+        <span data-i18n="combos.lb.text">Three rows and three columns.</span>
+      </li>
+      <li class="felt combo">
+        <span class="pair"><img src="assets/pieces/bomb.webp" alt="" width="56" height="56"><i>+</i><img src="assets/pieces/bomb.webp" alt="" width="56" height="56"></span>
+        <span class="mini" data-pattern="big" aria-hidden="true"></span>
+        <strong data-i18n="combos.bb.name">Bomb + bomb</strong>
+        <span data-i18n="combos.bb.text">Everything in a 5 × 5.</span>
+      </li>
+      <li class="felt combo">
+        <span class="pair"><img src="assets/pieces/rainbow.webp" alt="" width="56" height="56"><i>+</i><img src="assets/pieces/line_h.webp" alt="" width="56" height="56"></span>
+        <span class="mini" data-pattern="kindlines" aria-hidden="true"></span>
+        <strong data-i18n="combos.rl.name">Rainbow + line</strong>
+        <span data-i18n="combos.rl.text">Every piece of that kind turns into a line blast, and they all fire.</span>
+      </li>
+      <li class="felt combo combo-secret">
+        <span class="pair"><img src="assets/pieces/rainbow.webp" alt="" width="56" height="56"><i>+</i><img src="assets/pieces/rainbow.webp" alt="" width="56" height="56"></span>
+        <span class="mini mini-secret" data-pattern="secret" aria-hidden="true"></span>
+        <strong data-i18n="combos.rr.name">Rainbow + rainbow</strong>
+        <span data-i18n="combos.rr.text">We’ll let you find that one out.</span>
+      </li>
+    </ul>
+
+    <div class="felt cascade">
+      <div>
+        <h3 data-i18n="cascade.title">Cascades pay more</h3>
+        <p data-i18n="cascade.text">Every time falling pieces make a new match on their own, the multiplier climbs.</p>
+      </div>
+      <ol class="ladder" aria-label="Multiplier by cascade" data-i18n-attr="aria-label:cascade.label">
+        <li>×1</li><li data-i18n="cascade.x15">×1.5</li><li>×2</li><li>×3</li><li>×4</li><li>×5</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ try it -->
+<section class="section section-lilac" id="try">
+  <div class="wrap try-grid">
+    <div class="try-copy">
+      <header class="section-head section-head-left">
+        <p class="kicker" data-i18n="try.kicker">Try it</p>
+        <h2 data-i18n="try.title">A sample board, right here</h2>
+        <p data-i18n="try.intro">Drag a piece onto a neighbour, or tap one and then the other. You have 20 moves. Reach 2,500 points for the first star.</p>
+      </header>
+
+      <div class="felt hud">
+        <div class="hud-score">
+          <span class="hud-label" data-i18n="try.score">Score</span>
+          <output class="hud-value" id="hud-score">0</output>
+        </div>
+        <div class="hud-moves">
+          <span class="hud-label" data-i18n="try.moves">Moves</span>
+          <output class="hud-value" id="hud-moves">20</output>
+        </div>
+        <div class="bar" aria-hidden="true">
+          <span class="bar-fill" id="hud-fill"></span>
+          <img class="notch" style="left:26%" src="assets/star-dim.webp" alt="" width="40" height="40">
+          <img class="notch" style="left:58%" src="assets/star-dim.webp" alt="" width="40" height="40">
+          <img class="notch" style="left:90%" src="assets/star-dim.webp" alt="" width="40" height="40">
+        </div>
+      </div>
+
+      <div class="try-actions">
+        <button type="button" class="btn btn-soft" id="new-board" data-i18n="try.new">New board</button>
+      </div>
+      <p class="fine" data-i18n="try.note">A web sample drawn with Cottony’s art and played by the rules in its design document. It isn’t the game: no sound, simpler effects and no boosters.</p>
+    </div>
+
+    <div class="board-stage">
+      <img class="friend friend-left" src="assets/friend-cloud.webp" alt="" width="180" height="180">
+      <img class="friend friend-right" src="assets/friend-pink.webp" alt="" width="160" height="160">
+      <div class="felt board-frame">
+        <div class="board" id="board" tabindex="0" role="application" aria-roledescription="match-3 board" aria-label="Sample Cottony board. Use the arrow keys to move, Enter to pick a piece and Enter again on a neighbour to swap." data-i18n-attr="aria-label:try.boardLabel">
+          <div class="cells"></div>
+          <div class="pieces"></div>
+          <div class="cursor" hidden></div>
+          <div class="fx"></div>
+          <div class="combo-tag" aria-hidden="true"></div>
+          <div class="board-end" hidden>
+            <div class="felt end-card">
+              <h3 class="end-title"></h3>
+              <div class="end-stars"></div>
+              <p class="end-score"></p>
+              <p class="end-text"></p>
+              <button type="button" class="btn end-again"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="sr-only" aria-live="polite" id="board-live"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ boosters -->
+<section class="section section-cream" id="boosters">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker" data-i18n="boosters.kicker">Boosters</p>
+      <h2 data-i18n="boosters.title">Three tools for a tight spot</h2>
+      <p data-i18n="boosters.intro">Using a booster doesn’t cost a move, and whatever you don’t spend carries over to the next level.</p>
+    </header>
+
+    <ul class="boosters">
+      <li>
+        <span class="booster"><img src="assets/boosters/hammer.webp" alt="" width="132" height="132"><b>3</b></span>
+        <h3 data-i18n="boosters.hammer.name">Hammer</h3>
+        <p data-i18n="boosters.hammer.text">Knocks out the one piece you tap.</p>
+      </li>
+      <li>
+        <span class="booster"><img src="assets/boosters/shuffle.webp" alt="" width="132" height="132"><b>2</b></span>
+        <h3 data-i18n="boosters.shuffle.name">Shuffle</h3>
+        <p data-i18n="boosters.shuffle.text">Mixes up the whole board.</p>
+      </li>
+      <li>
+        <span class="booster"><img src="assets/boosters/wand.webp" alt="" width="132" height="132"><b>1</b></span>
+        <h3 data-i18n="boosters.wand.name">Wand</h3>
+        <p data-i18n="boosters.wand.text">Turns any piece into a rainbow.</p>
+      </li>
+    </ul>
+
+    <div class="levels">
+      <div class="felt level-card">
+        <div class="level-stars" aria-hidden="true">
+          <img src="assets/star-gold.webp" alt="" width="72" height="72">
+          <img src="assets/star-gold.webp" alt="" width="92" height="92">
+          <img src="assets/star-gold.webp" alt="" width="72" height="72">
+        </div>
+        <h3 data-i18n="levels.title">Three stars per level</h3>
+        <p data-i18n="levels.text">Reach the target for one star, 160% of it for two and 240% for three.</p>
+      </div>
+      <div class="felt level-card">
+        <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1Z"/></svg>
+        <h3 data-i18n="levels.offline.title">No account, no internet</h3>
+        <p data-i18n="levels.offline.text">Your levels, stars and boosters are saved on your own computer.</p>
+      </div>
+      <div class="felt level-card">
+        <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c2.5-4 5-4 7.5 0s5 4 7.5 0 2.5-2 3-2"/></svg>
+        <h3 data-i18n="levels.motion.title">Calmer motion</h3>
+        <p data-i18n="levels.motion.text">A reduced-motion setting shortens every animation and stops the board from shaking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ sneak peek -->
+<section class="section section-sky" id="peek">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker" data-i18n="peek.kicker">Sneak peek</p>
+      <h2 data-i18n="peek.title">From the sewing table</h2>
+      <p data-i18n="peek.intro">Concept art next to work-in-progress art from the game. Plenty will change before launch.</p>
+    </header>
+
+    <div class="gallery">
+      <figure class="felt shot shot-wide">
+        <button type="button" class="shot-open" data-full="assets/gallery-screens-wip.webp">
+          <img src="assets/gallery-screens-wip.webp" alt="Three work-in-progress screens: the title screen, a level-complete card with two stars and an out-of-moves card" data-i18n-attr="alt:peek.screens.alt" loading="lazy" width="1400" height="785">
+        </button>
+        <figcaption><span class="chip chip-wip" data-i18n="peek.wip">Work in progress</span> <span data-i18n="peek.screens">Title, level complete and out of moves</span></figcaption>
+      </figure>
+      <figure class="felt shot">
+        <button type="button" class="shot-open" data-full="assets/gallery-combo.webp">
+          <img src="assets/gallery-combo.webp" alt="Concept art of a combo: four hearts matched in a line, clearing, a cascade and a new rainbow heart" data-i18n-attr="alt:peek.combo.alt" loading="lazy" width="1048" height="1100">
+        </button>
+        <figcaption><span class="chip" data-i18n="peek.concept">Concept art</span> <span data-i18n="peek.combo">How a combo plays out, from match to new special</span></figcaption>
+      </figure>
+      <figure class="felt shot">
+        <button type="button" class="shot-open" data-full="assets/gallery-board-wip.webp">
+          <img src="assets/gallery-board-wip.webp" alt="The Cottony board screen drawn with the game’s generated plush art, with a +1,200 score popup" data-i18n-attr="alt:peek.board.alt" loading="lazy" width="619" height="1100">
+        </button>
+        <figcaption><span class="chip chip-wip" data-i18n="peek.wip">Work in progress</span> <span data-i18n="peek.board">The board, drawn with the game’s own art</span></figcaption>
+      </figure>
+      <figure class="felt shot">
+        <button type="button" class="shot-open" data-full="assets/gallery-board-concept.webp">
+          <img src="assets/gallery-board-concept.webp" alt="Concept art of the board screen with level 12, a score of 24,680 and 18 moves left" data-i18n-attr="alt:peek.concept.alt" loading="lazy" width="733" height="1100">
+        </button>
+        <figcaption><span class="chip" data-i18n="peek.concept">Concept art</span> <span data-i18n="peek.first">The board screen as first imagined</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ studio -->
+<section class="section section-cream studio" id="studio">
+  <div class="wrap">
+    <div class="lockup">
+      <img src="assets/badge.webp" alt="" width="132" height="132">
+      <p class="lockup-word"><span>Viglet</span><span class="brand-games">Games</span></p>
+    </div>
+    <h2 data-i18n="studio.title">We craft epic Steam adventures.</h2>
+    <p class="studio-text" data-i18n="studio.text">Viglet Games is a publisher driven by creativity and heart. Cottony is our debut.</p>
+    <ul class="values">
+      <li>
+        <span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7.5h10a5 5 0 0 1 4.9 6l-.7 3.4a2.4 2.4 0 0 1-4.1 1.1L15 15.8H9L6.9 18a2.4 2.4 0 0 1-4.1-1.1L2.1 13.5A5 5 0 0 1 7 7.5Z"/><path class="cut" d="M7.5 10.2v3.6M5.7 12h3.6"/><circle class="cut-dot" cx="15.6" cy="11" r="1"/><circle class="cut-dot" cx="17.8" cy="13" r="1"/></svg></span>
+        <span data-i18n="studio.casual">Casual and fun games</span>
+      </li>
+      <li>
+        <span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.3-4.4-9.3-8.9C1.3 8.3 3.3 4.6 7 4.6c2 0 3.7 1.1 5 2.9 1.3-1.8 3-2.9 5-2.9 3.7 0 5.7 3.7 4.3 7-2 4.5-9.3 8.9-9.3 8.9Z"/></svg></span>
+        <span data-i18n="studio.connect">Experiences that connect</span>
+      </li>
+      <li>
+        <span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4L2.8 9.5l6.4-.8Z"/></svg></span>
+        <span data-i18n="studio.detail">Creativity in every detail</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ finale -->
+<section class="finale">
+  <div class="wrap">
+    <div class="felt finale-card">
+      <img class="finale-friend" src="assets/friend-cloud.webp" alt="" width="150" height="150">
+      <img class="finale-logo" src="assets/cottony-logo.webp" alt="Cottony" width="360" height="130">
+      <h2 data-i18n="finale.title">Cottony is on its way to Steam</h2>
+      <p data-i18n="finale.text">The store page isn’t open yet. Until it is, send this page to someone who would squeeze a plush heart.</p>
+      <div class="cta-row cta-center">
+        <button type="button" class="btn" id="share" data-i18n="finale.share">Share this page</button>
+        <span class="soon-pill" data-i18n="finale.soon">Steam page coming soon</span>
+      </div>
+      <p class="share-status" id="share-status" aria-live="polite"></p>
+    </div>
+  </div>
+  <svg class="hills hills-foot" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70c170-40 340-44 520-6s380 50 560 6 280-40 360-20v90H0Z" fill="#F6CDE0"/>
+    <path d="M0 70c170-40 340-44 520-6s380 50 560 6 280-40 360-20" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="10 9" opacity=".75" vector-effect="non-scaling-stroke" transform="translate(0 16)"/>
+    <path d="M0 112c240-30 480-26 720 0s480 22 720-6v34H0Z" fill="#EFB6CF"/>
+  </svg>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p data-i18n="foot.text">© 2026 Viglet Games. Cottony is in development, and anything shown here may change.</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <form method="dialog"><button type="submit" class="lightbox-close" aria-label="Close" data-i18n-attr="aria-label:peek.close">×</button></form>
+  <img alt="">
+  <p class="lightbox-caption"></p>
+</dialog>
+
+</body>
+</html>
