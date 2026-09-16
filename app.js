@@ -119,6 +119,8 @@
     'peek.combo.alt': 'Arte conceitual de um combo: quatro corações combinados em linha, a eliminação, a cascata e um novo coração arco-íris',
     'peek.board': 'O tabuleiro, desenhado com a arte do próprio jogo',
     'peek.board.alt': 'A tela do tabuleiro do Cottony com a arte de pelúcia gerada para o jogo e um aviso de +1.200 pontos',
+    'peek.map': 'O mapa de fases, entre uma fase e a próxima',
+    'peek.map.alt': 'O mapa de fases do Cottony: uma estrada de feltro sobe por um campo acolchoado, passando pelas fases concluídas com suas estrelas até o marcador na fase 9, com fases bloqueadas sob uma faixa de nuvens',
     'peek.first': 'A tela do tabuleiro, como foi imaginada',
     'peek.concept.alt': 'Arte conceitual da tela do tabuleiro com fase 12, 24.680 pontos e 18 movimentos restantes',
     'peek.close': 'Fechar',
