@@ -763,7 +763,14 @@ button { font: inherit; color: inherit; }
 /* ------------------------------------------------------------------ studio */
 
 .studio { text-align: center; }
-.lockup { display: block; margin-inline: auto; width: clamp(240px, 34vw, 380px); filter: drop-shadow(0 12px 12px rgba(107, 74, 58, .3)); }
+/* the label's flat mark and name, the lockup games.viglet.com wears, leading to that page */
+.lockup {
+  display: inline-flex; align-items: center; gap: 14px; text-decoration: none;
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 3.6vw, 2.4rem); color: var(--ink);
+}
+.lockup img { width: clamp(56px, 7vw, 72px); height: auto; filter: drop-shadow(0 8px 10px rgba(107, 74, 58, .3)); }
+.lockup b { color: var(--brand); font-weight: 700; }
+.lockup:hover b { color: var(--berry); }
 .studio h2 { margin-top: 30px; font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
 .studio-text { margin: 12px auto 0; max-width: 34em; font-size: 1.12rem; }
 
